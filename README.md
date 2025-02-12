@@ -7,7 +7,5 @@ Desktop and landscape only
 Ideas were taken from the following websites: 
 
 Apple.com 
-
 Boss.com 
-
 more
