@@ -216,7 +216,6 @@ footer a:hover {
 
 
 
-
 /* Scroll to Top Button */
 .scroll-to-top {
     position: fixed;
@@ -242,12 +241,6 @@ footer a:hover {
     transform: scale(1.1);
     background-color: #f9a825;
 }
-
-
-
-
-
-
 
 
 
@@ -376,17 +369,6 @@ footer a:hover {
 .product-box .visit-button:hover {
     background-color: #f9a825;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -564,6 +546,11 @@ body {
     cursor: pointer;
     text-align: center;
 }
+
+
+
+
+
 
 
 
