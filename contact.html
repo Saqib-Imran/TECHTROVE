@@ -1,59 +1,83 @@
+<!-- My Code Start -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title for the contact page -->
     <title>TECHTROVE - Contact Us</title>
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header section containing logo and navigation -->
     <header>
+        <!-- Logo container with a link to the homepage -->
         <div class="logo">
             <a href="index.html">
                 <img src="Logo.png" alt="Tech Store Logo">
             </a>
         </div>
+        <!-- Navigation menu with links to different pages -->
         <nav>
             <ul class="nav-menu">
+                <!-- Home Page link -->
                 <li><a href="index.html">Home</a></li>
                 <li></li><li>|</li><li></li>
+                <!-- About Page link -->
                 <li><a href="about.html">About</a></li>
                 <li></li><li>|</li><li></li>
+                <!-- Products Page link -->
                 <li><a href="products.html">Products</a></li>
                 <li></li><li>|</li><li></li>
+                <!-- Contact Page link -->
                 <li><a href="contact.html">Contact</a></li>
                 <li></li><li>|</li><li></li>
+                <!-- Cart Page link -->
                 <li><a href="cart.html">Cart</a></li>
                 <li></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Main content section of the page -->
     <main>
+        <!-- Page heading for the contact page -->
         <h1>Contact Us</h1>
+        <!-- Subheading for additional information -->
         <h2>Have a question or need help with your order?</h2>
+        <!-- Instructions for the user -->
         <h3>Fill out the form below and we'll get back to you as soon as possible</h3>
+        <!-- Contact form for user input -->
         <form id="contactForm">
+            <!-- Label and input field for the user's full name -->
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
         
+            <!-- Label and input field for the user's email -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
         
+            <!-- Label and textarea for the user's message -->
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
 
+            <!-- Privacy information for the user -->
             <h4>Your information will only be used to respond to your inquiry and will not be shared with third parties</h4>
         
+            <!-- Submit button for the form -->
             <button type="submit">Send</button>
-
         </form>
         
+        <!-- Confirmation message displayed after form submission -->
         <div id="confirmationMessage" style="display:none;">Thank you for contacting us!</div>
         
     </main>
 
+    <!-- Footer section with links and validation images -->
     <footer>
+        <!-- Container for footer navigation links -->
         <div class="link-container">
             <a href="FAQ.html">FAQs</a> 
             <span>|</span>
@@ -66,15 +90,17 @@
             <a href="Help.html">Help</a>
         </div>
         <br>
+        <!-- Additional footer links -->
         <div class="link-container">
             <a href="contact.html">Contact Us</a>
             <span>|</span>
             <a href="GoogleReview.html">Google Review</a>
         </div>
         <br>
+        <!-- Container for CSS validation images -->
         <div class="link-container">
-            
             <p>
+                <!-- Link to W3C CSS validator -->
                 <a href="https://jigsaw.w3.org/css-validator/check/referer">
                     <img style="border:0;width:88px;height:31px"
                         src="https://jigsaw.w3.org/css-validator/images/vcss"
@@ -83,18 +109,22 @@
             </p>
             
             <p>
+                <!-- Link to W3C CSS validator with blue image -->
                 <a href="https://jigsaw.w3.org/css-validator/check/referer">
                     <img style="border:0;width:88px;height:31px"
                         src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
                         alt="Valid CSS!" />
                 </a>
             </p>
-
         </div>
+        <!-- Footer separator line -->
         <p>________________________________________________________________________________</p>
+        <!-- Copyright information -->
         <p>&copy; 2025 TECHTROVE. All Rights Reserved.</p>
     </footer>
 
+    <!-- External JavaScript file for functionality -->
     <script src="scripts.js"></script>
 </body>
 </html>
+<!-- My code End -->
