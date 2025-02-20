@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelector('.slides');
-    const slideImages = document.querySelectorAll('.slides img');
-    const prevButton = document.getElementById('prev');
-    const nextButton = document.getElementById('next');
+    const slides = document.querySelector('.slides'); // Container for slides
+    const slideImages = document.querySelectorAll('.slides img'); // All slide images
+    const prevButton = document.getElementById('prev'); // Previous button
+    const nextButton = document.getElementById('next'); // Next button
 
-    let currentIndex = 0;
-    const totalSlides = slideImages.length;
+    let currentIndex = 0; // Current slide index
+    const totalSlides = slideImages.length; // Total number of slides
 
     // Set up initial slide position
     function updateSlidePosition() {
