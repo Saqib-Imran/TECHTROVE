@@ -1,125 +1,164 @@
+<!-- My Code Start -->
 <!DOCTYPE html>
+<!-- Declares the document type and version of HTML (HTML5) -->
 <html lang="en">
+<!-- Sets the language of the document to English -->
 <head>
+    <!-- Meta tags for character encoding and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title and link to external stylesheet -->
     <title>TECHTROVE - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header section containing the logo and navigation menu -->
     <header>
+        <!-- Header logo, also works as a home page hyper link -->
         <div class="logo">
+            <!-- Logo linking back to the homepage -->
             <a href="index.html">
                 <img src="Logo.png" alt="Tech Store Logo">
             </a>
         </div>
+        <!-- Navigation menu with links to different pages -->
         <nav>
             <ul class="nav-menu">
+                <!-- Home Page -->
                 <li><a href="index.html">Home</a></li>
                 <li></li><li>|</li><li></li>
+                <!-- About Page -->
                 <li><a href="about.html">About</a></li>
                 <li></li><li>|</li><li></li>
+                <!-- Products Page -->
                 <li><a href="products.html">Products</a></li>
                 <li></li><li>|</li><li></li>
+                <!-- Contact Page -->
                 <li><a href="contact.html">Contact</a></li>
                 <li></li><li>|</li><li></li>
+                <!-- Cart Page -->
                 <li><a href="cart.html">Cart</a></li>
                 <li></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Help Button -->
+    <!-- Help button linking to the contact page for assistance -->
     <a href="contact.html" id="helpButton" class="help-button">
         <img src="help.png" alt="Help">
     </a>
 
-    <!-- Scroll to Top Button -->
+    <!-- Scroll-to-top button for better user experience -->
     <button id="scrollToTopButton" class="scroll-to-top">⬆</button>
 
+    <!-- Main content section of the page -->
     <main>
+        <!-- Slideshow section with images and navigation controls -->
         <section class="slideshow">
             <div class="slides">
+                <!-- Slideshow images for showcasing products -->
                 <img src="home_slideshow_final.png" alt="Slide 1">
                 <img src="mac_slideshow_final.png" alt="Slide 2">
                 <img src="windows_slideshow.png" alt="Slide 3">
                 <img src="chromebook_slideshow.png" alt="Slide 4">
             </div>
+            <!-- Navigation buttons for the slideshow -->
             <div class="controls">
                 <button id="prev">❮</button>
                 <button id="next">❯</button>
             </div>
         </section>
 
+        <!-- Hero section with logo, tagline, and call-to-action -->
         <section class="hero">
-            <img src="Logo.png" width="300"  alt="Logo">
+            <img src="Logo.png" width="300" alt="Logo">
             <p>Your one-stop shop for the latest laptops!</p>
+            <!-- Button linking to the products page -->
             <a href="products.html" class="btn">Shop Now</a>
         </section>
 
+        <!-- Features section highlighting key selling points -->
         <section class="features">
             <div class="feature">
                 <h3>Wide Range of OS</h3>
                 <p>Find laptops running macOS, Windows, Linux, and more.</p>
+                <!-- end of features div -->
             </div>
             <div class="feature">
                 <h3>Future-Ready Design</h3>
                 <p>Futuristic colors and sleek designs for tech enthusiasts.</p>
+                <!-- end of features div -->
             </div>
             <div class="feature">
                 <h3>Easy Shopping</h3>
                 <p>Seamless cart system and secure checkout process.</p>
+                <!-- end of features div -->
             </div>
         </section>
 
-
+        <!-- Product grid showcasing featured products -->
         <div class="product-grid">
             <div class="product-box">
+                <!-- Product image and link to learn more -->
                 <img src="m4.jpg" alt="Product Image 1">
                 <a href="https://www.apple.com/uk/newsroom/2024/10/new-macbook-pro-features-m4-family-of-chips-and-apple-intelligence/" target="_blank" class="visit-button">Learn More</a>
+                <!-- External link to Apple on their M4 chipset linup -->
             </div>
             <div class="product-box">
                 <img src="amd.avif" alt="Product Image 2">
                 <a href="https://www.amd.com/en/products/processors/desktops/ryzen.html" target="_blank" class="visit-button">Learn More</a>
+            <!-- External link to AMD for their AMD ryzen chips-->
             </div>
             <div class="product-box">
                 <img src="intel2.jpg" alt="Product Image 3">
                 <a href="https://www.intel.com/content/www/us/en/products/details/processors.html" target="_blank" class="visit-button">Learn More</a>
+            <!-- External link to Intel for their intel core chips-->
             </div>
             <div class="product-box">
                 <img src="which_os_is_for_you.png" alt="Product Image 4">
                 <a href="about.html" class="visit-button">Learn More</a>
+            <!-- Internal link to the about page for more information-->
             </div>
         </div>
 
+        <!-- Testimonials section with customer feedback -->
         <section class="testimonials">
             <h2>What Our Customers Say</h2>
+            <!-- Testimonial cards with quotes and names -->
             <div class="testimonial">
                 <p>"TECHTROVE made finding the perfect laptop easy. I got exactly what I needed—great specs, my preferred OS, and a product built to last!"</p>
                 <h4>- Sarah W., Tech Enthusiast</h4>
             </div>
+            <!-- Testimonial cards with quotes and names -->
             <div class="testimonial">
                 <p>"Finally, a store that focuses on quality and longevity. My TECHTROVE laptop is everything I wanted and more!"</p>
                 <h4>- John Smith., Software Developer</h4>
             </div>
+            <!-- Testimonial cards with quotes and names -->
             <div class="testimonial">
                 <p>"TECHTROVE's is more OS based. You pick your preferred one, and they have the best ones handpicked with the best specs!"</p>
                 <h4>- Jamal Ahmad., University Student</h4>
             </div>
+            <!-- end of testamonials-->
         </section>
 
+        <!-- Newsletter section for email subscriptions -->
         <section class="newsletter">
             <h2>Subscribe to Our Newsletter</h2>
             <p>Get the latest updates and exclusive deals delivered to your inbox.</p>
+            <!-- Form for email input and submission -->
             <form>
+                <!-- Email input field and submit button and email enter field -->
                 <input type="email" placeholder="Enter your email" required>
                 <button type="submit">Subscribe</button>
             </form>
         </section>
     </main>
 
+    <!-- Footer section with links and copyright information -->
     <footer>
         <div class="link-container">
+            <!-- Links to FAQs, Privacy Statement, Terms & Conditions, Cookies, and Help -->
             <a href="FAQ.html">FAQs</a> 
             <span>|</span>
             <a href="PrivacyStatement.html">Privacy Statement</a>
@@ -132,13 +171,14 @@
         </div>
         <br>
         <div class="link-container">
+            <!-- Links to Contact Us and Google Review -->
             <a href="contact.html">Contact Us</a>
             <span>|</span>
             <a href="GoogleReview.html">Google Review</a>
         </div>
         <br>
         <div class="link-container">
-            
+            <!-- CSS Validation images for W3C compliance -->
             <p>
                 <a href="https://jigsaw.w3.org/css-validator/check/referer">
                     <img style="border:0;width:88px;height:31px"
@@ -154,12 +194,15 @@
                         alt="Valid CSS!" />
                 </a>
             </p>
-
+            <!-- CSS Validation images end -->
         </div>
         <p>________________________________________________________________________________</p>
+        <!-- Copyright notice -->
         <p>&copy; 2025 TECHTROVE. All Rights Reserved.</p>
     </footer>
 
+    <!-- Link to external JavaScript file for interactivity -->
     <script src="scripts.js"></script>
 </body>
 </html>
+<!-- My code End -->
