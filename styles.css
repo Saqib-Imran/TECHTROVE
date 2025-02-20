@@ -1,653 +1,706 @@
 /* General Styles */
+/* Set the font family, background color, text color, height, and border radius for the body */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: #1a1a1a;
-    color: white;
+    font-family: 'Roboto', sans-serif; /* Font family */
+    background: #1a1a1a; /* Background color */
+    color: white; /* Text color */
     height: 50vh; /* Set the height to 50% of the viewport */
-    border-radius: 10px;
-
+    border-radius: 10px; /* Rounded corners */
 }
 
+/* Slideshow Styles */
+/* Container for the slideshow */
 .slideshow {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
+    position: relative; /* Positioning for absolute children */
+    max-width: 100%; /* Full width */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 10px; /* Rounded corners */
 }
 
+/* Styles for the slides */
 .slides {
-    display: flex;
-    transition: transform 2s ease-in-out;
-    width: 100%;
-    border-radius: 10px;
-
+    display: flex; /* Flexbox layout */
+    transition: transform 2s ease-in-out; /* Smooth transition */
+    width: 100%; /* Full width */
+    border-radius: 10px; /* Rounded corners */
 }
 
+/* Styles for images inside slides */
 .slides img {
-    width: 100%; /* Make the images span the full width */
+    width: 100%; /* Full width */
     height: 50vh; /* Match the slideshow height */
-    object-fit: cover; /* Ensures the images maintain aspect ratio while covering the area */
-    border-radius: 10px;
-
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
 }
 
+/* Controls for the slideshow */
+/* Container for control buttons */
 .controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
+    position: absolute; /* Positioned absolutely */
+    top: 50%; /* Center vertically */
+    width: 100%; /* Full width */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between buttons */
+    transform: translateY(-50%); /* Center vertically */
 }
 
+/* Styles for control buttons */
 .controls button {
-    background-color: rgba(255, 0, 0, 0);
-    color: rgba(233, 16, 16, 0);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1.5em;
-    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0); /* Transparent background */
+    color: rgba(233, 16, 16, 0); /* Transparent text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1.5em; /* Font size */
+    border-radius: 50%; /* Rounded corners */
 }
 
+/* Hover effect for control buttons */
 .controls button:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-    color: black;
+    background-color: rgba(255, 255, 255, 0.7); /* Light background */
+    color: black; /* Black text */
 }
 
+/* General link styles */
+/* Remove underline and inherit color */
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none; /* No underline */
+    color: inherit; /* Inherit color */
 }
 
+/* Heading styles */
+/* Font family and color for headings */
 h1, h2, h3, h4 {
-    font-family: 'Montserrat', sans-serif;
-    color: #00f5d4;
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    color: #00f5d4; /* Text color */
 }
 
+/* Specific styles for h1 */
 h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
+    font-size: 3em; /* Font size */
+    margin-bottom: 20px; /* Margin */
 }
 
+/* Specific styles for h2 */
 h2 {
-    font-size: 2em;
-    margin-bottom: 15px;
+    font-size: 2em; /* Font size */
+    margin-bottom: 15px; /* Margin */
 }
 
+/* Specific styles for h3 */
 h3 {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Font size */
 }
 
+/* Header styles */
+/* Container for the header */
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background: linear-gradient(135deg, #00f5d4, #121212);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between items */
+    padding: 20px; /* Padding */
+    background: linear-gradient(135deg, #00f5d4, #121212); /* Gradient background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow */
 }
 
+/* Logo inside the header */
 header .logo img {
-    height: 50px;
+    height: 50px; /* Height */
 }
 
+/* Navigation styles */
+/* Container for the navigation list */
 nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+    display: flex; /* Flexbox layout */
+    list-style: none; /* No list style */
+    gap: 20px; /* Space between items */
 }
 
+/* Styles for navigation links */
 nav ul li a {
-    color: #00f5d4;
-    font-size: 1.2em;
-    transition: color 0.3s;
+    color: #00f5d4; /* Text color */
+    font-size: 1.2em; /* Font size */
+    transition: color 0.3s; /* Smooth transition */
 }
 
+/* Hover effect for navigation links */
 nav ul li a:hover {
-    color: #f9a825;
+    color: #f9a825; /* Hover color */
 }
 
-
-
-
-
+/* Authentication button styles */
+/* Styles for authentication buttons */
 .auth-buttons .btn {
-    background: #00f5d4;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out;
+    background: #00f5d4; /* Background color */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s ease-in-out; /* Smooth transition */
 }
 
+/* Hover effect for authentication buttons */
 .auth-buttons .btn:hover {
-    background: #f9a825;
+    background: #f9a825; /* Hover background color */
 }
 
+/* Main content styles */
+/* Container for the main content */
 main {
-    padding: 45px;
-    text-align: center;
+    padding: 45px; /* Padding */
+    text-align: center; /* Center text */
 }
 
+/* Hero section styles */
+/* Container for the hero section */
 .hero {
-    background: linear-gradient(135deg, #00f5d4, #121212);
-    padding: 50px 20px;
-    border-radius: 10px;
+    background: linear-gradient(135deg, #00f5d4, #121212); /* Gradient background */
+    padding: 50px 20px; /* Padding */
+    border-radius: 10px; /* Rounded corners */
 }
 
-
+/* Paragraph inside the hero section */
 .hero p {
-    font-size: 1.5em;
-    margin-bottom: 30px;
+    font-size: 1.5em; /* Font size */
+    margin-bottom: 30px; /* Margin */
 }
 
+/* Button inside the hero section */
 .hero .btn {
-    background-color: #f9a825;
-    padding: 15px 25px;
-    font-size: 1.2em;
-    border-radius: 50px;
+    background-color: #f9a825; /* Background color */
+    padding: 15px 25px; /* Padding */
+    font-size: 1.2em; /* Font size */
+    border-radius: 50px; /* Rounded corners */
 }
 
-
-
+/* Features section styles */
+/* Container for the features section */
 .features {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+    display: flex; /* Flexbox layout */
+    justify-content: space-around; /* Space around items */
+    margin-top: 50px; /* Margin */
 }
 
+/* Individual feature box */
 .feature {
-    width: 30%;
-    background: #2c2c2c;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
+    width: 30%; /* Width */
+    background: #2c2c2c; /* Background color */
+    padding: 20px; /* Padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3); /* Shadow */
 }
 
+/* Heading inside feature box */
 .feature h3 {
-    color: #00f5d4;
+    color: #00f5d4; /* Text color */
 }
 
+/* Footer styles */
+/* Container for the footer */
 footer {
-    background-color: #121212;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-    font-size: 0.9em;
+    background-color: #121212; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding */
+    margin-top: 50px; /* Margin */
+    font-size: 0.9em; /* Font size */
 }
 
+/* Links inside the footer */
 footer a {
-    color: #00f5d4;
+    color: #00f5d4; /* Text color */
 }
 
+/* Hover effect for footer links */
 footer a:hover {
-    color: #f9a825;
+    color: #f9a825; /* Hover color */
 }
-
 
 
 /* Help Button */
+/* Styles for the help button */
 .help-button {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    width: 60px;
-    height: 60px;
-    background-color: #f9a8257d; /* Blue color */
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    text-decoration: none;
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* 20px from the bottom */
+    left: 20px; /* 20px from the left */
+    width: 60px; /* Width of the button */
+    height: 60px; /* Height of the button */
+    background-color: #f9a8257d; /* Semi-transparent yellow color */
+    border-radius: 50%; /* Circular button */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    text-decoration: none; /* No underline */
 }
 
+/* Hover effect for help button */
 .help-button:hover {
-    transform: scale(1.1);
-    background-color: #f9a825; /* Darker blue on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    background-color: #f9a825; /* Darker yellow on hover */
 }
 
+/* Styles for the icon inside the help button */
 .help-button img {
-    width: 32px; /* Icon size */
-    height: 32px;
-    filter: invert(1); /* Makes the icon white */
+    width: 32px; /* Icon width */
+    height: 32px; /* Icon height */
+    filter: invert(1); /* Invert colors to make the icon white */
 }
-
-
-
 
 /* Scroll to Top Button */
+/* Styles for the scroll to top button */
 .scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px; /* Move to the bottom-right corner */
-    width: 50px;
-    height: 50px;
-    background-color: #f9a82575;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    opacity: 1; /* Always visible */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    background-color: #f9a82575; /* Semi-transparent yellow color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 50%; /* Circular button */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    cursor: pointer; /* Pointer cursor */
+    opacity: 1; /* Fully visible */
     visibility: visible; /* Always visible */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Smooth transition */
 }
 
+/* Hover effect for scroll to top button */
 .scroll-to-top:hover {
-    transform: scale(1.1);
-    background-color: #f9a825;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    background-color: #f9a825; /* Darker yellow on hover */
 }
-
-
-
 
 /* OS Types Section */
+/* Styles for the OS types section */
 .OS-Types {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px;
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column layout */
+    gap: 30px; /* Space between items */
+    padding: 20px; /* Padding */
 }
 
+/* Styles for the section content */
 .OS-Types .section-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background: #2c2c2c; /* Box background color */
-    border-radius: 10px;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center align items vertically */
+    gap: 20px; /* Space between items */
+    background: #2c2c2c; /* Dark background color */
+    border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    padding: 20px;
+    padding: 20px; /* Padding */
 }
 
-/* Image Styling */
+/* Styles for the image container */
 .OS-Types .section-content .image {
-    flex: 1; /* Ensures image takes up one portion of the width */
-    max-width: 40%; /* Adjust width as needed */
+    flex: 1; /* Take up one portion of the width */
+    max-width: 40%; /* Maximum width */
 }
 
+/* Styles for the image */
 .OS-Types .section-content .image img {
-    width: 400px;
-    height: 400px;
-    border-radius: 10px; /* Rounded corners for the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle image shadow */
+    width: 400px; /* Image width */
+    height: 400px; /* Image height */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
 
-/* Info Styling */
+/* Styles for the info container */
 .OS-Types .section-content .info {
-    flex: 2; /* Ensures text takes up more space */
-    color: white; /* Matches the theme */
+    flex: 2; /* Take up two portions of the width */
+    color: white; /* Text color */
 }
 
+/* Styles for the header */
 .OS-Types .section-content .info h2 {
     color: #00f5d4; /* Header color */
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Margin below the header */
 }
 
+/* Styles for the paragraph */
 .OS-Types .section-content .info p {
-    font-size: 1.1em;
-    line-height: 1.5;
+    font-size: 1.1em; /* Font size */
+    line-height: 1.5; /* Line height */
     color: #ccc; /* Softer text color */
 }
 
-
-
-
+/* Product Category Button */
+/* Styles for the product category button */
 .product-category .btn {
-    background-color: #f9a825;
-    padding: 15px 25px;
-    font-size: 1.2em;
-    border-radius: 50px;
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: #f9a825; /* Background color */
+    padding: 15px 25px; /* Padding */
+    font-size: 1.2em; /* Font size */
+    border-radius: 50px; /* Rounded corners */
+    color: #fff; /* Text color */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline block layout */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
 }
 
+/* Hover effect for product category button */
 .product-category .btn:hover {
-    background-color: #d18800;
-    transform: scale(1.05);
+    background-color: #d18800; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
-
 
 /* Product Grid */
+/* Styles for the product grid */
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 20px; /* Space between boxes */
-    padding: 20px;
-    justify-content: center; /* Center-align the grid */
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between items */
+    padding: 20px; /* Padding */
+    justify-content: center; /* Center align the grid */
 }
 
 /* Product Box */
+/* Styles for the product box */
 .product-box {
-    position: relative;
-    overflow: hidden; /* Ensures image stays within the box */
-    border-radius: 10px; /* Smooth edges for boxes */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    position: relative; /* Relative position */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
     transition: transform 0.3s ease-in-out; /* Smooth transition */
     width: 100%; /* Full width */
-    max-width: 4000px; /* Optional: Set max width for control */
+    max-width: 4000px; /* Maximum width */
     margin: 0 auto; /* Center align */
 }
 
-/* Image Styling */
+/* Styles for the image inside the product box */
 .product-box img {
-    width: 100%; /* Image fits the box */
-    height: auto; /* Keeps aspect ratio intact */
-    transition: transform 0.3s ease-in-out; /* Hover zoom effect */
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
     border-radius: 10px; /* Match box corners */
 }
 
-/* Hover Zoom Effect */
+/* Hover effect for the image */
 .product-box:hover img {
     transform: scale(1.05); /* Slight zoom effect */
 }
 
 /* Visit Button */
+/* Styles for the visit button */
 .product-box .visit-button {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #00f5d4;
-    padding: 10px 20px;
-    font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none; /* Hide by default */
-    transition: background-color 0.3s ease-in-out;
+    position: absolute; /* Absolute position */
+    bottom: 10px; /* 10px from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: #00f5d4; /* Background color */
+    padding: 10px 20px; /* Padding */
+    font-size: 1em; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    display: none; /* Hidden by default */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
 }
 
+/* Hover effect for the visit button */
 .product-box:hover .visit-button {
     display: inline-block; /* Show on hover */
 }
 
+/* Hover effect for the visit button */
 .product-box .visit-button:hover {
-    background-color: #f9a825;
+    background-color: #f9a825; /* Darker color on hover */
 }
 
-
-
-
+/* Link Container */
+/* Styles for the link container */
 .link-container {
-    display: flex;
-    justify-content: center; /* Center aligns the content */
-    align-items: center; /* Vertically aligns the items */
-    gap: 40px; /* Adjust the space between items, equivalent to ~5 spaces visually */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    gap: 40px; /* Space between items */
 }
 
+/* Styles for the links */
 .link-container a {
-    color: #00f5d4; /* Matches your theme */
-    text-decoration: none; /* Removes the underline */
-    font-size: 1em; /* Adjust font size as needed */
+    color: #00f5d4; /* Link color */
+    text-decoration: none; /* No underline */
+    font-size: 1em; /* Font size */
 }
 
+/* Styles for the span */
 .link-container span {
-    color: #fff; /* Adjust color to match your design */
-    font-size: 1.2em;
+    color: #fff; /* Text color */
+    font-size: 1.2em; /* Font size */
 }
 
-
-/* Product Grid */
+/* Product List */
+/* Styles for the product list */
 .product-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    margin-top: 40px;
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    gap: 30px; /* Space between items */
+    margin-top: 40px; /* Margin at the top */
 }
 
+/* Product */
+/* Styles for the product */
 .product {
-    background: #2c2c2c;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s;
+    background: #2c2c2c; /* Background color */
+    padding: 20px; /* Padding */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center align text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.3s; /* Smooth transition */
 }
 
+/* Hover effect for the product */
 .product:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
+/* Styles for the product image */
 .product img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
 }
 
+/* Styles for the product button */
 .product button {
-    background-color: #00f5d4;
-    border: none;
-    padding: 10px;
-    font-size: 1.2em;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    background-color: #00f5d4; /* Background color */
+    border: none; /* No border */
+    padding: 10px; /* Padding */
+    font-size: 1.2em; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
 }
 
+/* Hover effect for the product button */
 .product button:hover {
-    background-color: #f9a825;
+    background-color: #f9a825; /* Darker color on hover */
 }
 
 /* General Styles */
+/* General styles for the body */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: #1a1a1a;
-    color: white;
+    font-family: 'Roboto', sans-serif; /* Font family */
+    background: #1a1a1a; /* Background color */
+    color: white; /* Text color */
 }
 
 /* Cart Page Layout */
+/* Styles for the cart container */
 .cart-container {
-    display: flex;
-    gap: 20px;
-    padding: 40px;
+    display: flex; /* Flexbox layout */
+    gap: 20px; /* Space between items */
+    padding: 40px; /* Padding */
 }
 
+/* Styles for the cart items section */
 .cart-items-section {
-    flex: 3;
-    background: #2c2c2c;
-    padding: 20px;
-    border-radius: 10px;
+    flex: 3; /* Take up three portions of the width */
+    background: #2c2c2c; /* Background color */
+    padding: 20px; /* Padding */
+    border-radius: 10px; /* Rounded corners */
 }
 
+/* Styles for the summary section */
 .summary-section {
-    flex: 1;
-    background: #1a1a1a;
-    padding: 20px;
-    border-radius: 10px;
+    flex: 1; /* Take up one portion of the width */
+    background: #1a1a1a; /* Background color */
+    padding: 20px; /* Padding */
+    border-radius: 10px; /* Rounded corners */
 }
-
-
 
 /* Cart Items */
+/* Styles for the cart item */
 .cart-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between; /* Space between items */
+    margin-bottom: 15px; /* Margin at the bottom */
+    padding: 10px; /* Padding */
+    border-bottom: 1px solid #ccc; /* Bottom border */
 }
 
+/* Styles for the image inside the cart item */
 .cart-item .image img {
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    object-fit: cover;
+    width: 50px; /* Image width */
+    height: 50px; /* Image height */
+    border-radius: 10px; /* Rounded corners */
+    object-fit: cover; /* Maintain aspect ratio */
 }
 
+/* Styles for the details inside the cart item */
 .cart-item .details {
-    flex: 1;
-    margin-left: 15px;
+    flex: 1; /* Take up one portion of the width */
+    margin-left: 15px; /* Margin on the left */
 }
 
+/* Styles for the price inside the cart item */
 .cart-item .price {
-    margin-left: 20px;
-    font-size: 1.2em;
+    margin-left: 20px; /* Margin on the left */
+    font-size: 1.2em; /* Font size */
 }
 
+/* Styles for the remove item button */
 .cart-item .remove-item {
-    background-color: #f9a825;
-    padding: 5px 7px;
-    font-size: 0.9em;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin-left: 40px; /* Add margin to the left of the remove button */
-
+    background-color: #f9a825; /* Background color */
+    padding: 5px 7px; /* Padding */
+    font-size: 0.9em; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    margin-left: 40px; /* Margin on the left */
 }
 
+/* Styles for the details inside the cart item */
 .cart-item .details {
-    display: flex;
-    text-align: right; /* Aligns text to the right */
-    justify-content: space-between;
-    width: 100%;
-
+    display: flex; /* Flexbox layout */
+    text-align: right; /* Align text to the right */
+    justify-content: space-between; /* Space between items */
+    width: 100%; /* Full width */
 }
 
+/* Styles for the quantity label */
 .quantity-label {
-    margin-left: 10px;
-    margin-right: 5px;
+    margin-left: 10px; /* Margin on the left */
+    margin-right: 5px; /* Margin on the right */
 }
 
+/* Styles for the quantity input */
 .quantity-input {
-    width: 40px;
-    margin-left: 5px;
+    width: 40px; /* Input width */
+    margin-left: 5px; /* Margin on the left */
 }
 
 /* Summary Section */
+/* Styles for the summary section header */
 .summary-section h2 {
-    margin-bottom: 20px;
-    color: #00f5d4;
+    margin-bottom: 20px; /* Margin at the bottom */
+    color: #00f5d4; /* Text color */
 }
 
+/* Styles for the summary item */
 .summary-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between items */
+    margin-bottom: 15px; /* Margin at the bottom */
 }
 
+/* Styles for the total */
 .total {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-top: 20px;
+    font-size: 1.5em; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin-top: 20px; /* Margin at the top */
 }
 
+/* Styles for the checkout button */
 .checkout-btn {
-    background-color: #00f5d4;
-    padding: 15px 25px;
-    font-size: 1.2em;
-    border-radius: 50px;
-    width: 100%;
-    cursor: pointer;
-    text-align: center;
+    background-color: #00f5d4; /* Background color */
+    padding: 15px 25px; /* Padding */
+    font-size: 1.2em; /* Font size */
+    border-radius: 50px; /* Rounded corners */
+    width: 100%; /* Full width */
+    cursor: pointer; /* Pointer cursor */
+    text-align: center; /* Center align text */
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Forms */
+/* Styles for input and textarea elements */
 input, textarea {
-    padding: 12px;
-    width: 100%;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #333;
-    background-color: #333;
-    color: white;
+    padding: 12px; /* Padding inside the input/textarea */
+    width: 100%; /* Full width */
+    margin-bottom: 20px; /* Margin at the bottom */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #333; /* Border color */
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
 }
 
+/* Styles for submit button */
 button[type="submit"] {
-    background-color: #00f5d4;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    border-radius: 50px;
-    cursor: pointer;
-    border: none;
+    background-color: #00f5d4; /* Background color */
+    padding: 15px 30px; /* Padding */
+    font-size: 1.2em; /* Font size */
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    border: none; /* No border */
 }
 
+/* Hover effect for submit button */
 button[type="submit"]:hover {
-    background-color: #f9a825;
+    background-color: #f9a825; /* Background color on hover */
 }
-
-
-/*121212121212121212121*/
-
-
 
 /* Testimonials */
+/* Container for testimonials section */
 .testimonials {
-    margin: 50px 0;
-    background: #2c2c2c;
-    padding: 40px;
-    border-radius: 10px;
+    margin: 50px 0; /* Margin at the top and bottom */
+    background: #2c2c2c; /* Background color */
+    padding: 40px; /* Padding */
+    border-radius: 10px; /* Rounded corners */
 }
 
+/* Styles for testimonials heading */
 .testimonials h2 {
-    margin-bottom: 20px;
-    color: #00f5d4;
+    margin-bottom: 20px; /* Margin at the bottom */
+    color: #00f5d4; /* Text color */
 }
 
+/* Styles for individual testimonial */
 .testimonial {
-    margin-bottom: 20px;
-    font-style: italic;
+    margin-bottom: 20px; /* Margin at the bottom */
+    font-style: italic; /* Italic text */
 }
 
+/* Styles for testimonial author */
 .testimonial h4 {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #f9a825;
+    margin-top: 10px; /* Margin at the top */
+    font-weight: bold; /* Bold text */
+    color: #f9a825; /* Text color */
 }
 
 /* Newsletter */
+/* Container for newsletter section */
 .newsletter {
-    text-align: center;
-    background: linear-gradient(135deg, #00f5d4, #121212);
-    padding: 40px 20px;
-    border-radius: 10px;
+    text-align: center; /* Center align text */
+    background: linear-gradient(135deg, #00f5d4, #121212); /* Gradient background */
+    padding: 40px 20px; /* Padding */
+    border-radius: 10px; /* Rounded corners */
 }
 
+/* Styles for newsletter heading */
 .newsletter h2 {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Margin at the bottom */
 }
 
+/* Styles for newsletter form */
 .newsletter form {
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+    justify-content: center; /* Center align form elements */
+    gap: 10px; /* Space between form elements */
+    margin-top: 20px; /* Margin at the top */
 }
 
+/* Styles for email input in newsletter form */
 .newsletter input[type="email"] {
-    width: 40%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: white;
+    width: 40%; /* Width */
+    padding: 10px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
 }
 
+/* Styles for newsletter button */
 .newsletter button {
-    background-color: #00f5d4;
-    padding: 10px 10px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
+    background-color: #00f5d4; /* Background color */
+    padding: 10px 10px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1em; /* Font size */
 }
 
+/* Hover effect for newsletter button */
 .newsletter button:hover {
-    background-color: #f9a825;
+    background-color: #f9a825; /* Background color on hover */
 }
