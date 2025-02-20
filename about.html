@@ -1,124 +1,153 @@
+<!-- My Code Start -->
 <!DOCTYPE html>
+<!-- Declares the document type and version of HTML (HTML5) -->
 <html lang="en">
+<!-- Sets the language of the document to English -->
 <head>
+    <!-- Meta tags for character encoding and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title and link to external stylesheet -->
     <title>TECHTROVE - About Us</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header section containing the logo and navigation menu -->
     <header>
+        <!-- Header logo, also works as a home page hyper link -->
         <div class="logo">
+            <!-- Logo linking back to the homepage -->
             <a href="index.html">
                 <img src="Logo.png" alt="Tech Store Logo">
             </a>
         </div>
+        <!-- Navigation menu with links to different pages -->
         <nav>
             <ul class="nav-menu">
+                <!-- Home Page -->
                 <li><a href="index.html">Home</a></li>
                 <li></li><li>|</li><li></li>
+                <!-- About Page -->
                 <li><a href="about.html">About</a></li>
                 <li></li><li>|</li><li></li>
+                <!-- Products Page -->
                 <li><a href="products.html">Products</a></li>
                 <li></li><li>|</li><li></li>
+                <!-- Contact Page -->
                 <li><a href="contact.html">Contact</a></li>
                 <li></li><li>|</li><li></li>
+                <!-- Cart Page -->
                 <li><a href="cart.html">Cart</a></li>
                 <li></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Help Button -->
+    <!-- Help button linking to the contact page for assistance -->
     <a href="contact.html" id="helpButton" class="help-button">
         <img src="help.png" alt="Help">
     </a>
 
-    <!-- Scroll to Top Button -->
+    <!-- Scroll-to-top button for better user experience -->
     <button id="scrollToTopButton" class="scroll-to-top">⬆</button>
 
+    <!-- Main content section of the page -->
     <main>
 
+        <!-- Hero section with logo, slideshow, and call-to-action -->
         <section class="hero">
             <img src="Logo.png" width="300" height="auto" alt="Logo">
             <div class="slideshow">
-    
+                <!-- Placeholder for a slideshow (currently empty) -->
             </div>
             <h1>At TECHTROVE, we focus on the operating system you love.</h1> 
             <h2>Based on your preference, we handpick top-spec, long-lasting laptops.</h2>
             <h3>No cheap, short-lived models—just high-end laptops built to serve you for years.</h3>
-            
+            <!-- Button linking to the products page -->
             <a href="products.html" class="btn">Shop Now</a>
         </section>
 
-
-        
+        <!-- Section containing information about different operating systems -->
         <section class="OS-Types">
             <!-- Apple Silicon Section -->
             <section class="Apple-Silicon">
                 <div class="section-content">
                     <div class="image">
+                        <!-- Image representing macOS -->
                         <img src="macos.png" alt="Apple Silicon">
                     </div>
                     <div class="info">
                         <h2>MacOS</h2>
+                        <!-- About MacOS  -->
                         <p>
                             Apple's macOS is renowned for its sleek design, stability, and optimized performance, particularly on Apple hardware like MacBooks and iMacs. It's highly favored in creative fields such as graphic design, video editing, and music production, thanks to software like Final Cut Pro and Logic Pro. macOS also integrates seamlessly with Apple's ecosystem, making it ideal for users with other Apple devices. Its intuitive interface and focus on user experience make it a great choice for professionals and casual users alike, though it’s best suited for those who value reliability and aesthetics over gaming or highly customizable features.                        </p>
                     </div>
                 </div>
+                <!-- End of Apple Silicon section -->
             </section>
         
             <!-- Windows Section -->
             <section class="Windows">
                 <div class="section-content">
                     <div class="image">
+                        <!-- Image representing Windows -->
                         <img src="Windows.png" alt="Windows">
                     </div>
                     <div class="info">
                         <h2>Windows</h2>
+                        <!-- about windows -->
                         <p>
                             Windows is the most widely used operating system globally, known for its user-friendly interface and compatibility with a vast range of hardware and software. It's versatile and caters to almost every need, from office work and education to gaming and software development. Windows is also highly customizable, making it suitable for both beginners and tech enthusiasts. With a rich ecosystem of productivity tools and gaming platforms like Xbox Game Pass, it’s an excellent all-round OS for personal, business, and entertainment purposes.
                         </p>
                     </div>
                 </div>
+                <!-- End of Windows section -->
             </section>
         
             <!-- Chromebook OS Section -->
             <section class="ChromebookOS">
                 <div class="section-content">
                     <div class="image">
+                        <!-- Image representing Chromebook OS -->
                         <img src="pic.png" alt="Chromebook OS">
                     </div>
                     <div class="info">
                         <h2>Chromebook OS</h2>
+                        <!-- about chromeOS -->
                         <p>
                             ChromeOS is a lightweight, cloud-based operating system developed by Google, primarily used in Chromebooks. It excels in simplicity, speed, and affordability, making it perfect for students, educators, and those who rely on web-based applications. ChromeOS is centered around the Chrome browser, with access to Android apps, making it ideal for basic productivity tasks like browsing, word processing, and streaming. Its minimalistic design and focus on security and efficiency are appealing for users seeking an easy-to-use and maintenance-free experience.
                         </p>
                     </div>
                 </div>
+                <!-- End of Chromebook OS section -->
             </section>
         
             <!-- Linux Section -->
             <section class="Linux">
                 <div class="section-content">
                     <div class="image">
+                        <!-- Image representing Linux -->
                         <img src="linux.png" alt="Linux">
                     </div>
                     <div class="info">
                         <h2>Linux</h2>
+                        <!-- about linux -->
                         <p>
                             Linux is a powerful and open-source operating system favored by developers, system administrators, and tech enthusiasts for its flexibility and control. It’s used for server management, programming, cybersecurity, and even gaming, thanks to advancements like Steam's Proton. Linux comes in many distributions (distros) like Ubuntu, Fedora, and Debian, catering to various skill levels and purposes. Its stability, customizability, and strong community support make it a preferred choice for those who want to optimize their system for specific tasks or value open-source principles.
                         </p>
                     </div>
                 </div>
+                <!-- End of Linux section -->
             </section>
+            <!-- End of About sections -->
         </section>
-        
-        
+    
     </main>
 
+    <!-- Footer section with links and copyright information -->
     <footer>
         <div class="link-container">
+            <!-- Links to FAQs, Privacy Statement, Terms & Conditions, Cookies, and Help -->
             <a href="FAQ.html">FAQs</a> 
             <span>|</span>
             <a href="PrivacyStatement.html">Privacy Statement</a>
@@ -131,13 +160,15 @@
         </div>
         <br>
         <div class="link-container">
+            <!-- Links to Contact Us and Google Review -->
             <a href="contact.html">Contact Us</a>
             <span>|</span>
+            <!-- Google external link for reviews -->
             <a href="GoogleReview.html">Google Review</a>
         </div>
         <br>
         <div class="link-container">
-            
+            <!-- CSS Validation images for W3C compliance -->
             <p>
                 <a href="https://jigsaw.w3.org/css-validator/check/referer">
                     <img style="border:0;width:88px;height:31px"
@@ -153,12 +184,15 @@
                         alt="Valid CSS!" />
                 </a>
             </p>
-
+            <!-- CSS Validation images end -->
         </div>
         <p>________________________________________________________________________________</p>
+        <!-- Copyright notice -->
         <p>&copy; 2025 TECHTROVE. All Rights Reserved.</p>
     </footer>
 
+    <!-- Link to external JavaScript file for interactivity -->
     <script src="scripts.js"></script>
 </body>
 </html>
+<!-- My code End -->
