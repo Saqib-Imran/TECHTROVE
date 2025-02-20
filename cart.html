@@ -1,40 +1,58 @@
+<!-- My Code Start -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
     <title>TECHTROVE - Your Cart</title>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header section containing logo and navigation -->
     <header>
+        <!-- Header logo, also works as a home page hyperlink -->
         <div class="logo">
+            <!-- Logo linking back to the homepage -->
             <a href="index.html">
                 <img src="Logo.png" alt="Tech Store Logo">
             </a>
         </div>
+        <!-- Navigation menu with links to different pages -->
         <nav>
             <ul class="nav-menu">
+                <!-- Home Page link -->
                 <li><a href="index.html">Home</a></li>
                 <li></li><li>|</li><li></li>
+                <!-- About Page link -->
                 <li><a href="about.html">About</a></li>
                 <li></li><li>|</li><li></li>
+                <!-- Products Page link -->
                 <li><a href="products.html">Products</a></li>
                 <li></li><li>|</li><li></li>
+                <!-- Contact Page link -->
                 <li><a href="contact.html">Contact</a></li>
                 <li></li><li>|</li><li></li>
+                <!-- Cart Page link -->
                 <li><a href="cart.html">Cart</a></li>
                 <li></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Main content section -->
     <main>
+        <!-- Cart container section -->
         <section class="cart-container">
+            <!-- Section for displaying cart items -->
             <div class="cart-items-section">
                 <h1>Your Cart</h1>
+                <!-- Table to display cart items -->
                 <table width="100%">
                     <thead>
+                        <!-- Table headers -->
                         <tr>
                             <td>Image</td>
                             <td>Product</td>
@@ -44,23 +62,30 @@
                             <td>Remove</td>
                         </tr>
                     </thead>
+                    <!-- Table body for dynamically added cart items -->
                     <tbody id="cart-items">
                         <!-- Items will be dynamically added here -->
                     </tbody>
                 </table>
             </div>
+            <!-- Section for cart summary -->
             <div class="summary-section">
                 <h2>Summary</h2>
+                <!-- List to display cart summary -->
                 <ul id="cart-summary" style="display: flex; flex-direction: column; gap: 10px;">
                     <!-- Product names and subtotal will be listed here -->
                 </ul>
+                <!-- Display total price -->
                 <p><strong>Total: &pound;<span id="cart-total">0.00</span></strong></p>
+                <!-- Checkout button -->
                 <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
             </div>
         </section>
     </main>
 
+    <!-- Footer section -->
     <footer>
+        <!-- Container for footer links -->
         <div class="link-container">
             <a href="FAQ.html">FAQs</a> 
             <span>|</span>
@@ -73,14 +98,16 @@
             <a href="Help.html">Help</a>
         </div>
         <br>
+        <!-- Second container for footer links -->
         <div class="link-container">
             <a href="contact.html">Contact Us</a>
             <span>|</span>
             <a href="GoogleReview.html">Google Review</a>
         </div>
         <br>
+        <!-- Container for CSS validation images -->
         <div class="link-container">
-            
+            <!-- CSS Validation images start -->
             <p>
                 <a href="https://jigsaw.w3.org/css-validator/check/referer">
                     <img style="border:0;width:88px;height:31px"
@@ -96,13 +123,16 @@
                         alt="Valid CSS!" />
                 </a>
             </p>
-
+            <!-- CSS Validation images end -->
         </div>
+        <!-- Footer separator and copyright notice -->
         <p>________________________________________________________________________________</p>
         <p>&copy; 2025 TECHTROVE. All Rights Reserved.</p>
     </footer>
 
+    <!-- JavaScript for cart functionality -->
     <script>
+        // Array of cart items with name, image, price, and quantity
         const cartItems = [
             { name: "MacBook Pro 16 - M4 Max", image: "macbook-pro 16.jpeg", price: 2499, quantity: 1 },
             { name: "Samsung Galexy Book4 360", image: "samsung.jpg", price: 1339.99, quantity: 1 },
@@ -112,6 +142,7 @@
             { name: "Acer Chromebook Plus Spin 714", image: "acer 1.webp", price: 799, quantity: 1 }
         ];
 
+        // Function to render cart items in the table and summary
         function renderCartItems() {
             const cartItemsContainer = document.getElementById("cart-items");
             const cartSummary = document.getElementById("cart-summary");
@@ -119,26 +150,31 @@
             cartItemsContainer.innerHTML = "";
             cartSummary.innerHTML = "";
             
+            // Loop through each item in the cart
             cartItems.forEach((item, index) => {
                 const subtotal = item.price * item.quantity;
                 cartTotal += subtotal;
                 
+                // Create table row for each item
                 const row = `<tr>
                     <td><img src="${item.image}" alt="${item.name}" width="100" style="border-radius: 10px;"></td>
                     <td>${item.name}</td>
                     <td><input type="number" value="${item.quantity}" class="item-quantity" data-index="${index}" style="width: 30px;"></td>
                     <td>&pound;${item.price}</td>
                     <td>&pound;<span class="subtotal">${subtotal.toFixed(2)}</span></td>
-                    <td><button class="remove-item" data-index="index" style="background-color: orange; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer;">X</button></td>
+                    <td><button class="remove-item" data-index="${index}" style="background-color: orange; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer;">X</button></td>
                 </tr>`;
                 cartItemsContainer.innerHTML += row;
                 
+                // Add item to cart summary
                 const summaryItem = `<li style="display: flex; justify-content: space-between;"><span>${item.name}</span> <span>&pound;${subtotal.toFixed(2)}</span></li>`;
                 cartSummary.innerHTML += summaryItem;
             });
+            // Update total price
             document.getElementById("cart-total").textContent = cartTotal.toFixed(2);
         }
 
+        // Event listener for quantity input changes
         document.addEventListener("input", function(event) {
             if (event.target.classList.contains("item-quantity")) {
                 const index = event.target.getAttribute("data-index");
@@ -147,6 +183,7 @@
             }
         });
         
+        // Event listener for remove item button clicks
         document.addEventListener("click", function(event) {
             if (event.target.classList.contains("remove-item")) {
                 const index = event.target.getAttribute("data-index");
@@ -155,7 +192,9 @@
             }
         });
         
+        // Initial render of cart items
         renderCartItems();
     </script>
 </body>
 </html>
+<!-- My Code End -->
