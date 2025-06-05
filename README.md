@@ -1,45 +1,37 @@
-TechTrove – High-End Laptop Store (Front-End Project)
-🛒 Project Overview
-This repository showcases a responsive, single-page web application developed for a fictional online retailer, TechTrove. The platform simplifies high-end laptop shopping with clean UI, OS-based filters, and a curated product display, built as part of the Front End Development module.
+# TechTrove – High-End Laptop Store (Front-End Project)
 
-🎯 Objectives
-Build a functional and visually appealing product listing page
+## ⚙️ -- Project Overview  
+**TechTrove** is a fictional e-commerce platform designed for users who want premium laptops without the noise. Built as part of the Front End Development module (submitted Feb 2025), this project focuses on clean design, OS-based filtering, and responsive layout.
 
-Implement OS-based filtering for quick product discovery
+## 🎯 -- Objectives  
+- **Design a modern, single-page application**  
+- **Implement OS filter functionality (Windows, macOS, Linux)**  
+- **Ensure cross-device responsiveness**  
+- **Apply clear, maintainable code structure**
 
-Ensure full responsiveness across mobile, tablet, and desktop
+## 🧰 -- Technologies & Tools  
+- **HTML5** – Semantic layout  
+- **CSS3** – Flexbox, Grid, Media Queries  
+- **JavaScript (ES6)** – DOM manipulation & filter logic  
+- **GitHub Pages** – Deployment  
+- **VS Code** – Development environment
 
-Apply clean code practices using modern JavaScript and CSS
+## 📂 -- Project Structure  
+- `/index.html` → Main webpage  
+- `/css/` → Responsive and component-based styles  
+- `/js/` → Filtering logic and data handling  
+- `/assets/` → Icons, product images, branding
 
-🧰 Technologies & Tools
-HTML5 / CSS3 / JavaScript (ES6)
+## 🚀 -- Key Features  
+- **Instant filtering** based on selected OS  
+- **Curated product cards** with pricing, specs, and OS tags  
+- **Responsive design** for desktop, tablet, and mobile  
+- **Minimalist layout** with clear visual hierarchy
 
-Flexbox & Grid Layouts
+## 📌 -- Notes  
+This project is **front-end only**. All product data is hardcoded in the script — no back-end or API integration. Built for demonstration and learning purposes.
 
-Responsive Design (Media Queries)
-
-VS Code, GitHub Pages
-
-📂 Contents
-/index.html → Main landing page with all components
-
-/css/ → Stylesheets for layout and responsiveness
-
-/js/ → Script handling filter logic and DOM manipulation
-
-/assets/ → Images and icons used throughout the site
-
-🚀 Key Features
-Dynamic filtering by operating system (Windows, macOS, Linux)
-
-Product cards with price, specs, and OS badge
-
-Mobile-first design with touch-friendly UI
-
-Minimalist layout with focus on product clarity
-
-📌 Notes
-This is a static front-end project. No back-end or real-time data fetching is implemented. All product data is stored locally in the script.
+---
 
 
 
